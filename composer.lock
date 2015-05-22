@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b82e5ae5e26a2af0009e77891c9d3de",
+    "hash": "eb17b9327aa48ab9966c9fd961040de5",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -872,33 +872,32 @@
         },
         {
             "name": "javiereguiluz/easyadmin-bundle",
-            "version": "v1.3.0",
+            "version": "dev-draft/dumb_extra_fields",
             "source": {
                 "type": "git",
-                "url": "https://github.com/javiereguiluz/EasyAdminBundle.git",
-                "reference": "0cbed95ceb52ba015eca297ba15149f83395aa82"
+                "url": "https://github.com/ogizanagi/EasyAdminBundle.git",
+                "reference": "13c569ea29fee83bf38757032b9a0008920703e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/javiereguiluz/EasyAdminBundle/zipball/0cbed95ceb52ba015eca297ba15149f83395aa82",
-                "reference": "0cbed95ceb52ba015eca297ba15149f83395aa82",
+                "url": "https://api.github.com/repos/ogizanagi/EasyAdminBundle/zipball/13c569ea29fee83bf38757032b9a0008920703e8",
+                "reference": "13c569ea29fee83bf38757032b9a0008920703e8",
                 "shasum": ""
             },
             "require": {
+                "doctrine/doctrine-bundle": "~1.2",
                 "doctrine/orm": "~2.3",
-                "pagerfanta/pagerfanta": "~1.0",
+                "pagerfanta/pagerfanta": "~1.0,>=1.0.1",
                 "php": ">=5.3.0",
-                "sensio/framework-extra-bundle": "~2.3|~3.0",
-                "symfony/config": "~2.3",
-                "symfony/dependency-injection": "~2.3",
-                "symfony/doctrine-bridge": "~2.3",
-                "symfony/form": "~2.3",
-                "symfony/framework-bundle": "~2.3",
-                "symfony/http-foundation": "~2.3",
-                "symfony/http-kernel": "~2.3",
-                "symfony/routing": "~2.3",
-                "symfony/yaml": "~2.3",
-                "twig/twig": "~1.0"
+                "sensio/distribution-bundle": "~2.3|~3.0",
+                "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
+                "symfony/symfony": "~2.3",
+                "twig/extensions": "~1.0",
+                "twig/twig": "~1.12,>=1.12.2"
+            },
+            "require-dev": {
+                "doctrine/doctrine-fixtures-bundle": "~2.2",
+                "phpunit/phpunit": "~4.4"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -906,7 +905,6 @@
                     "JavierEguiluz\\Bundle\\EasyAdminBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -927,7 +925,10 @@
                 "backend",
                 "generator"
             ],
-            "time": "2015-04-22 15:22:38"
+            "support": {
+                "source": "https://github.com/ogizanagi/EasyAdminBundle/tree/draft/dumb_extra_fields"
+            },
+            "time": "2015-05-22 15:09:21"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1903,7 +1904,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "javiereguiluz/easyadmin-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

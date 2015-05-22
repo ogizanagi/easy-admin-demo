@@ -7,3 +7,8 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    app.events.subscriber.eaadmin:
+        class: AppBundle\Event\Subscriber\EasyAdminEventSubscriber
+        arguments: [@templating]
+        tags: [{ name: kernel.event_subscriber }]
